@@ -1,0 +1,425 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    font-family: "Segoe UI";
+}
+
+.body {
+    background-color: #141414;
+}
+
+.header {
+    top: 0;
+    width: 100%;
+    background-color: #000;
+}
+
+.nav__1 {
+    background-color: black;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__titulos {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.header__enlaces {
+    margin: 16px;
+    position: relative;
+    text-align: left;
+}
+
+.header__menu {
+    display: none;
+}
+
+.header__hijo {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header__hijo:hover {
+    color: rgb(229, 9, 20);
+}
+
+.logo {
+    margin-top: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-left: 0;
+}
+
+.header__logo {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+.barra__div {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin-top: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.barra__busqueda-1 {
+    height: 30px;
+    background-color: #000;
+    color: white;
+    margin-top: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.barra__busqueda-2 {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    border-style: white;
+    color: white;
+    margin-top: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-left: 0;
+}
+
+.main {
+    background-color: #141414;
+}
+
+.m__section {
+    background-image: url(../imagenes/Leyenda-de-corra.webp);
+    background-position: center center;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.section {
+    width: 100%;
+    position: relative;
+}
+
+.mm__section {
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 400px;
+    padding-right: 350px;
+    padding-bottom: 200px;
+    height: 800px;
+}
+
+.main__section {
+    color: white;
+    text-align: left;
+}
+
+.main__boton {
+    width: 150px;
+    height: 30px;
+    background-color: #000;
+    color: white;
+}
+
+.main__subtitulo {
+    text-align: left;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: auto;
+}
+
+.separador__div {
+    border-top: 60px solid #141414;
+}
+
+.main__div{
+    background-color: #141414;
+}
+
+.main__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 295px);
+    grid-template-rows: repeat(6, 200px);
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.tarjeta {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: 45px;
+    margin-right: auto;
+}
+
+.tarjeta__lista {
+    align-content: space-between;
+    justify-content: flex-start;
+    border-radius: 10px;
+    min-height: 500px;
+}
+
+.tarjeta__div {
+    border-radius: 1rem;
+}
+
+.main__imagenes {
+    padding: 1rem;
+}
+
+.main__imagen {
+    object-fit: cover;
+    border-radius: 25px;
+    transition: transform 0.5s;
+}
+
+.main__imagen:hover {
+    transform: scale(1.1);
+}
+
+.bg-dark{
+    background-color: black !important;
+}
+
+.footer__title {
+    color: white;
+    text-align: left;
+}
+
+.footer__padre{
+    color: white;
+    display: flex;
+    position: relative;
+    text-align: left;
+    list-style: none;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    gap: 20px;
+}
+
+.footer__redes {
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer__rede1 {
+    margin: 1rem;
+}
+
+.footer__rede2 {
+    margin: 1rem;
+}
+
+.footer__rede3 {
+    margin: 1rem;
+}
+
+.footer__rede4 {
+    margin: 1rem;
+}
+
+.footer__copy {
+    background-color: black;
+}
+
+@media screen and (max-width: 1300px) {
+    .main__grid {
+        grid-template-columns: repeat(3, 295px);
+        grid-template-rows: repeat(10, 200px);
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .footer__padre {
+        display: flex;
+        font-size: 32px;
+        color: white;
+        text-decoration: none;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .nav__1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .m__section {
+        background-image: url(../imagenes/inicio-fondo-1.webp);
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .barra__div {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        position: relative;
+        justify-content: center;
+    }
+
+    .barra__busqueda-1 {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .barra__busqueda-2 {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .main__grid {
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(11, 200px);
+    }
+
+    .main__subtitulo {
+        text-align: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .mm__section {
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .main__section {
+        text-align: center;
+    }
+
+    .footer__padre {
+        display: flex;
+        font-size: 32px;
+        color: white;
+        text-decoration: none;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .nav__1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header__titulos {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        transition: right 1s;
+    }
+
+    #menu:target {
+        right: 0;
+    }
+
+    .header__menu {
+        display: flex;
+        font-size: 32px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .barra__busqueda-2 {
+        display: none;
+    }
+    
+    .m__section {
+        background-image: url(../imagenes/inicio-fondo-1.webp);
+        background-size: initial;
+    }
+    
+    .main_descripcion {
+        display: none;
+    }
+
+    .main__grid {
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(31, 200px);
+        margin: auto;
+    }
+
+    .footer {
+        background-color: #000;
+        color: #fff;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer__padre {
+        display: flex;
+        font-size: 32px;
+        color: white;
+        text-decoration: none;
+        gap: 20px;
+    }
+}
