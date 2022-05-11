@@ -211,11 +211,7 @@ body {
     transform: scale(1.1);
 }
 
-.bg-dark{
-    background-color: black !important;
-}
-
-.footer__title {
+/*.footer__title {
     color: white;
     text-align: left;
 }
@@ -257,7 +253,7 @@ body {
 
 .footer__rede4 {
     margin: 1rem;
-}
+}*/
 
 .footer__copy {
     background-color: black;
