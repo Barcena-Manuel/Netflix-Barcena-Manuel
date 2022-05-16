@@ -164,6 +164,8 @@ body {
     background-color: #141414;
 }
 
+
+
 .main__grid {
     display: grid;
     grid-template-columns: repeat(6, 295px);
@@ -211,6 +213,18 @@ body {
     transform: scale(1.1);
 }
 
+.tema__series {
+    color: white;
+    overflow: auto;
+}
+
+.titulo__pelis {
+    text-align: left;
+}
+
+.resumen {
+    text-align: left;
+}
 /*.footer__title {
     color: white;
     text-align: left;
