@@ -46,17 +46,11 @@ body {
 }
 
 .header__hijo {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
+    color: white !important;
 }
 
 .header__hijo:hover {
-    color: rgb(229, 9, 20);
+    color: rgb(229, 9, 20) !important;
 }
 
 .logo {
@@ -72,7 +66,7 @@ body {
     align-items: center;
 }
 
-.barra__div {
+/*.barra__div {
     display: flex;
     flex-direction: row;
     width: 500px;
@@ -105,6 +99,18 @@ body {
     margin-right: 0;
     margin-bottom: auto;
     margin-left: 0;
+}*/
+
+.barra__busquedaB1 {
+    color: white !important;
+    background-color: black !important;
+    border-color: white !important;
+}
+
+.barra__busquedaB2 {
+    color: white !important;
+    background-color: black !important;
+    border-color: white !important;
 }
 
 .main {
@@ -283,6 +289,11 @@ body {
         display: none;
     }
 
+    .barra__busquedaB {
+        color: white !important;
+        background-color: white !important;
+    }
+
     .footer__padre {
         display: flex;
         font-size: 32px;
@@ -306,7 +317,7 @@ body {
         display: none;
     }
 
-    .barra__div {
+    /*.barra__div {
         margin-top: 0;
         margin-right: 0;
         margin-bottom: 0;
@@ -327,6 +338,10 @@ body {
         margin-right: 0;
         margin-bottom: 0;
         margin-left: 0;
+    }*/
+
+    .imagen__hamburguesa {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     }
 
     .main__grid {

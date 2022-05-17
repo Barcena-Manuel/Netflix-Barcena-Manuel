@@ -28,22 +28,36 @@
 <body class="body">
     <header class="header">
         <!-- Cabecera de la pagina -->
-        <nav class="nav__1">
-        <div class="logo"><img class="header__logo" src="./imagenes/n.png" alt="Logotipo Netflix"><a href="index.html"></a></div>
-        <ul class="header__titulos" id="menu">
-            <li class="header__enlaces"><a class="header__hijo header__hijo--1" href="index.html">Inicio</a></li>
-            <li class="header__enlaces"><a class="header__hijo header__hijo--2" href="./paginas/series.html">Series</a></li>
-            <li class="header__enlaces"><a class="header__hijo header__hijo--3" href="./paginas/peliculas.html">Peliculas</a></li>
-            <li class="header__enlaces"><a class="header__hijo header__hijo--4" href="./paginas/novedades-populares.html">Novedades populares</a></li>
-            <li class="header__enlaces"><a class="header__hijo header__hijo--5" href="./paginas/mi-lista.html">Mi lista</a></li>
-        </ul>
-        <div class="barra__div">
-            <input class="barra__busqueda-1" type="buscar" name="buscar" placeholder="Buscar">
-            <input class="barra__busqueda-2" type="submit" value="Buscar">
-        </div>
-        <a class="header__menu" href="#menu"> 
-            <span class="jam jam-menu"></span>
-        </a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="header__logo" src="../imagenes/n.png" alt="Logotipo Netflix"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon imagen__hamburguesa"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link header__hijo" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__hijo" href="./paginas/series.html">Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__hijo" href="./paginas/peliculas.html">Peliculas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__hijo" href="./paginas/novedades-populares.html">Novedades populares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header__hijo" href="./paginas/mi-lista.html">Mi lista</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                <input class="form-control me-2 barra__busquedaB1" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success barra__busquedaB2" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
         </nav>
     </header>
     <!-- Final de la cabecera de la pagina -->
