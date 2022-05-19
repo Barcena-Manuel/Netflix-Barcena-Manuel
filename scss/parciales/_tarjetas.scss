@@ -1,0 +1,50 @@
+.tarjeta {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: 45px;
+    margin-right: auto;
+
+    &__lista {
+        align-content: space-between;
+        justify-content: flex-start;
+        border-radius: 10px;
+        min-height: 500px;
+    }
+    
+    &__div {
+        border-radius: 1rem;
+    }
+    
+    .main__imagenes {
+        padding: 1rem;
+    }
+    
+    .main__imagen {
+        object-fit: cover;
+        border-radius: 25px;
+        transition: transform 0.5s;
+    }
+    
+    .main__imagen:hover {
+        transform: scale(1.1);
+    }
+    
+    .tema__series {
+        color: $color-letras;
+        overflow: auto;
+    }
+    
+    .titulo__pelis {
+        text-align: left;
+    }
+    
+    .resumen {
+        text-align: left;
+    }
+}
+

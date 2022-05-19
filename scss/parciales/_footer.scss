@@ -1,0 +1,47 @@
+/*.footer__title {
+    color: white;
+    text-align: left;
+}
+
+.footer__padre{
+    color: white;
+    display: flex;
+    position: relative;
+    text-align: left;
+    list-style: none;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    gap: 20px;
+}
+
+.footer__redes {
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer__rede1 {
+    margin: 1rem;
+}
+
+.footer__rede2 {
+    margin: 1rem;
+}
+
+.footer__rede3 {
+    margin: 1rem;
+}
+
+.footer__rede4 {
+    margin: 1rem;
+}*/
+
+.footer__copy {
+    background-color: $color-header-footer;
+}

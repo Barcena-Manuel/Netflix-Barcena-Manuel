@@ -1,0 +1,108 @@
+.header {
+    top: 0;
+    width: 100%;
+    background-color: $color-header-footer;
+
+    .nav__1 {
+        background-color: $color-header-footer;
+        padding: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    &__titulos {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+    &__enlaces {
+        margin: 16px;
+        position: relative;
+        text-align: left;
+    }
+    
+    &__menu {
+        display: none;
+    }
+    
+    &__hijo {
+        color: $color-letras !important;
+        
+        &:hover {
+            color: $color-netflix !important;
+        }
+    }
+    
+    .logo {
+        margin-top: auto;
+        margin-right: 0;
+        margin-bottom: auto;
+        margin-left: 0;
+        
+        
+    }
+    &__logo {
+        width: 40px;
+        height: 40px;
+        align-items: center;
+    }
+    
+
+    /*.barra__div {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin-top: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-left: auto;
+    }
+
+    .barra__busqueda-1 {
+        height: 30px;
+        background-color: #000;
+        color: white;
+        margin-top: auto;
+        margin-right: 0;
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+
+    .barra__busqueda-2 {
+        width: 50px;
+        height: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        background-color: #000;
+        border-style: white;
+        color: white;
+        margin-top: auto;
+        margin-right: 0;
+        margin-bottom: auto;
+        margin-left: 0;
+    }*/
+
+    .barra__busquedaB1 {
+        color: $color-letras !important;
+        background-color: $color-header-footer !important;
+        border-color: white !important;
+
+        &:focus {
+            box-shadow: inset 0 0 0 1px $color-netflix !important;
+        }
+    }
+    
+    
+    
+    .barra__busquedaB2 {
+        color: $color-letras !important;
+        background-color: $color-header-footer !important;
+        border-color: white !important;
+    }
+}
+
