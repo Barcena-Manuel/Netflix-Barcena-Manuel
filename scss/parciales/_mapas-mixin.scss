@@ -1,0 +1,11 @@
+$redes: (
+    twitter: #1B9EF7,
+    instagram: #FF482A,
+    youtube: #FF0000,
+    facebook: #1876F2
+);
+
+@mixin generarflex ($display, $direccion) {
+    display: $display;
+    flex-direction: $direccion;
+}

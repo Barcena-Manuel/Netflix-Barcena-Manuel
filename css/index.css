@@ -125,7 +125,8 @@ body {
 
 .main .m__section {
   background-image: url(../imagenes/Leyenda-de-corra.webp);
-  background-position: center center;
+  text-align: center;
+  background-position: center center !important;
   background-size: cover;
   top: 0;
   bottom: 0;
@@ -294,7 +295,27 @@ body {
     margin: 1rem;
 }*/
 .footer__copy {
-  background-color: black;
+  background-color: black !important;
+}
+
+.ff__facebook {
+  color: #1876F2 !important;
+  border-color: #1876F2 !important;
+}
+
+.ff__twitter {
+  color: #1B9EF7 !important;
+  border-color: #1B9EF7 !important;
+}
+
+.ff__youtube {
+  color: #FF0000 !important;
+  border-color: #FF0000 !important;
+}
+
+.ff__instagram {
+  color: #FF482A !important;
+  border-color: #FF482A !important;
 }
 
 @media screen and (max-width: 1300px) {
@@ -324,7 +345,7 @@ body {
     align-items: center;
   }
   .m__section {
-    background-image: url(../imagenes/inicio-fondo-1.webp);
+    background-image: url(../imagenes/inicio-fondo-1.webp) !important;
   }
   .header__menu {
     display: none;
@@ -364,9 +385,9 @@ body {
     margin-left: 0;
   }
   .mm__section {
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    text-align: center !important;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
   }
   .main__section {
     text-align: center;
@@ -414,7 +435,7 @@ body {
     display: none;
   }
   .m__section {
-    background-image: url(../imagenes/inicio-fondo-1.webp);
+    background-image: url(../imagenes/inicio-fondo-1.webp) !important;
     background-size: initial;
   }
   .main_descripcion {

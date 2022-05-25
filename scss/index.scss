@@ -3,6 +3,7 @@
 /* Este es el archivo principal de SASS */
 /* Tiene todo los archivos importados */
 
+@import "parciales/_mapas-mixin.scss";
 @import "parciales/_variables.scss";
 @import "parciales/_estilos-iniciales.scss";
 @import "parciales/_header.scss";

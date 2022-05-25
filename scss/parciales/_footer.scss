@@ -43,5 +43,25 @@
 }*/
 
 .footer__copy {
-    background-color: $color-header-footer;
+    background-color: $color-header-footer !important;
+}
+
+.ff__facebook {
+    color: map-get($redes, facebook) !important;
+    border-color: map-get($redes, facebook) !important;
+}
+
+.ff__twitter {
+    color: map-get($redes,twitter) !important;
+    border-color: map-get($redes,twitter) !important;
+}
+
+.ff__youtube {
+    color: map-get($redes, youtube) !important;
+    border-color: map-get($redes, youtube) !important;
+}
+
+.ff__instagram {
+    color: map-get($redes, instagram) !important;
+    border-color: map-get($redes, instagram) !important;
 }

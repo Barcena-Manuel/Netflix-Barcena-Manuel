@@ -29,7 +29,7 @@
     }
 
     .m__section {
-        background-image: url(../imagenes/inicio-fondo-1.webp);
+        background-image: url(../imagenes/inicio-fondo-1.webp) !important;
     }
 
     .header__menu {
@@ -74,10 +74,10 @@
         margin-left: 0;
     }
 
-    .mm__section {
-        text-align: center;
-        padding-left: 100px;
-        padding-right: 100px;
+    .mm__section{
+        text-align: center !important;
+        padding-left: 100px !important;
+        padding-right: 100px !important;
     }
 
     .main__section {
@@ -134,7 +134,7 @@
     }
     
     .m__section {
-        background-image: url(../imagenes/inicio-fondo-1.webp);
+        background-image: url(../imagenes/inicio-fondo-1.webp) !important;
         background-size: initial;
     }
     
