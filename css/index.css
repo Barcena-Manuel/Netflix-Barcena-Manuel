@@ -222,6 +222,7 @@ body {
 
 .tarjeta__div {
   border-radius: 1rem;
+  height: 350px;
 }
 
 .tarjeta .main__imagenes {
