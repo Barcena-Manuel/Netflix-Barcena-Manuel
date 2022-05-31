@@ -295,6 +295,10 @@ body {
 .footer__rede4 {
     margin: 1rem;
 }*/
+.footer__footer {
+  background-color: black !important;
+}
+
 .footer__copy {
   background-color: black !important;
 }
