@@ -12,3 +12,13 @@ body {
 .body {
     background-color: $color-fondo;
 }
+
+.body::-webkit-scrollbar {
+    background-color: $color-fondo;
+    width: 5px;
+}
+
+.body::-webkit-scrollbar-thumb {
+    background-color: $color-netflix;
+    border-radius: 3px;
+}

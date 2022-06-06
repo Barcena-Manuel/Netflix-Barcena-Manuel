@@ -9,6 +9,8 @@
     margin-left: 45px;
     margin-right: auto;
 
+    
+
     &__lista {
         align-content: space-between;
         justify-content: flex-start;
@@ -49,3 +51,12 @@
     }
 }
 
+.tarjeta::-webkit-scrollbar {
+        background-color: $color-fondo;
+        width: 5px;
+    }
+
+    .tarjeta::-webkit-scrollbar-thumb {
+        background-color: $color-netflix;
+        border-radius: 3px;
+    }

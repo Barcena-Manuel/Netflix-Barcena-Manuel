@@ -16,6 +16,16 @@ body {
   background-color: #141414;
 }
 
+.body::-webkit-scrollbar {
+  background-color: #141414;
+  width: 5px;
+}
+
+.body::-webkit-scrollbar-thumb {
+  background-color: #E50914;
+  border-radius: 3px;
+}
+
 .header {
   top: 0;
   width: 100%;
@@ -250,6 +260,16 @@ body {
 
 .tarjeta .resumen {
   text-align: left;
+}
+
+.tarjeta::-webkit-scrollbar {
+  background-color: #141414;
+  width: 5px;
+}
+
+.tarjeta::-webkit-scrollbar-thumb {
+  background-color: #E50914;
+  border-radius: 3px;
 }
 
 /*.footer__title {
