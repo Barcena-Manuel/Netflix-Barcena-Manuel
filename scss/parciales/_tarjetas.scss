@@ -56,7 +56,11 @@
         width: 5px;
     }
 
-    .tarjeta::-webkit-scrollbar-thumb {
+.tarjeta::-webkit-scrollbar-thumb {
         background-color: $color-netflix;
         border-radius: 3px;
     }
+
+.tarjeta::-webkit-scrollbar-button {
+    background-color: $color-fondo;
+}
