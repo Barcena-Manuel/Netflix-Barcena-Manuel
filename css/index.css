@@ -272,6 +272,12 @@ body {
   border-radius: 3px;
 }
 
+.cuestionario {
+  color: white;
+  background-color: #141414;
+  margin-left: 600px;
+}
+
 /*.footer__title {
     color: white;
     text-align: left;
