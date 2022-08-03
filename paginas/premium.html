@@ -58,6 +58,7 @@
                     <li class="nav-item">
                         <a class="nav-link header__hijo" href="./premium.html">Premium</a>
                     </li>
+                    <button id="sesion" class="nav-link header__hijo boton_sesion">Cerrar sesion</button>
                 </ul>
                 <form class="d-flex">
                 <input class="form-control me-2 barra__busquedaB1" type="search" placeholder="Search" aria-label="Search">
@@ -89,13 +90,9 @@
                     <input type="password" id="password" name="password" placeholder="Ingrese su contraseña">
                 </div>
                 <div class="cuestionario">
-                    <label for="comentario">Comentario</label>
-                    <textarea placeholder="Ingese su comentario" name="comentario" id="comentario"  cols="20" rows="1"></textarea>
-                </div>
-                <div class="cuestionario">
                     <input type="submit" value="Envair"/>
                 </div>
-            </form>
+            </form> 
         </section>
     </main>
     <!-- Final del contenido principal de la pagina -->
@@ -144,6 +141,7 @@
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
     ></script>
-    <script src="./index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/sesion.js"></script>
 </body>
 </html>

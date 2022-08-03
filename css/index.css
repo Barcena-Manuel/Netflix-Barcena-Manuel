@@ -100,6 +100,10 @@ body {
   color: #E50914 !important;
 }
 
+.boton_sesion{
+  background-color: black;
+}
+
 .header .logo {
   margin-top: auto;
   margin-right: 0;
