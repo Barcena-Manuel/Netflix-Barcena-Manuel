@@ -47,5 +47,3 @@ function cerrarSesion(e){
 
 
 
-
-
