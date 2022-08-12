@@ -27,22 +27,21 @@ function validarFormluario(e){
 
 // Alerta
 function cerrarSesion(e){
-    if(formulario){
+    if(validarFormluario){
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'No tenes ninguna sesion iniciana',
+        })
+    }else{
         sessionStorage.clear(e)
         Swal.fire({
             icon: 'success',
             title: 'Cerrar sesion',
             text: 'Has cerrado tu sesion con exito!',
-    })   
-    }else{
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'No tenes ninguna sesion iniciana',
-        })  
+            })
     }
-}; 
-
+};
 
 
 

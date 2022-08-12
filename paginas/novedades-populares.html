@@ -60,6 +60,12 @@
                     </li>
                     <button id="sesion" class="nav-link header__hijo boton_sesion">Cerrar sesion</button>
                 </ul>
+                <li class="nav-item">
+                    <a class="nav-link header__hijo boton_sesion" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Mi lista</a>
+                    <table id="mi-lista" class="nav-link header__hijo">
+                        <tbody></tbody>
+                    </table>
+                </li>
                 <form class="d-flex">
                 <input class="form-control me-2 barra__busquedaB1" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success barra__busquedaB2" type="submit">Search</button>
@@ -315,8 +321,11 @@
                 <div class="separador__div"></div>
             <div class="main__div">
                 <h3 class="main__subtitulo">Las 10 series mas vista hoy en Argentina</h3>
-                <span class="tarjeta">
-                <div class="tarjeta__div">
+                    <span class="">
+                        <h2 class="main__subtitulo"></h2>
+                            <hr class="tarjeta__div titulo__pelis"/>
+                            <ul id="listado" class="tarjeta tema__series main__imagenes main__imagen"></ul>
+                <!-- <div class="tarjeta__div">
                     <img class="main__imagenes main__imagen" src="../imagenes/10-1.png" alt="top 1">
                 </div>
                 <div class="tarjeta__div">
@@ -345,7 +354,7 @@
                 </div>
                 <div class="tarjeta__div">
                     <img class="main__imagenes main__imagen" src="../imagenes/10-10.png" alt="top 10">
-                </div>
+                </div>  -->
             </span>
             </div>
         </section>
@@ -397,6 +406,8 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
     ></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/sesion.js"></script>
+    <script src="../js/fetch.js"></script>
+    <script src="../js/mi-lista.js"></script>
+    <script src="../js/peliculas-agregadas.js"></script>
 </body>
 </html>

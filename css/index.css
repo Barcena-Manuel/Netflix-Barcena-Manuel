@@ -101,7 +101,10 @@ body {
 }
 
 .boton_sesion{
+  text-align: center;
   background-color: black;
+  height: 40px;
+  width: 130px;
 }
 
 .header .logo {

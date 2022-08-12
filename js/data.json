@@ -1,0 +1,12 @@
+[
+    { "imagen": "../imagenes/10-1.png", "nombre": "Anatomia de un escandalo", "puesto": 1 },
+    { "imagen": "../imagenes/10-2.png", "nombre": "Cafe con aroma de mujer", "puesto": 2 },
+    { "imagen": "../imagenes/10-3.png", "nombre": "Elite", "puesto": 3 },
+    { "imagen": "../imagenes/10-4.png", "nombre": "Los Herederos de la Tierra", "puesto": 4 },
+    { "imagen": "../imagenes/10-5.png", "nombre": "Casi feliz", "puesto": 5 },
+    { "imagen": "../imagenes/10-6.png", "nombre": "Better call Saul", "puesto": 6 },
+    { "imagen": "../imagenes/10-7.png", "nombre": "Pedro el escamoso", "puesto": 7 },
+    { "imagen": "../imagenes/10-8.png", "nombre": "Bridgerton", "puesto": 8 },
+    { "imagen": "../imagenes/10-9.png", "nombre": "La reina del flow", "puesto": 9 },
+    { "imagen": "../imagenes/10-10.png", "nombre": "Pasión de Gabilanes", "puesto": 10 }
+]
