@@ -59,13 +59,15 @@
                     <li class="nav-item">
                         <a class="nav-link header__hijo" href="./paginas/premium.html">Premium</a> 
                     </li>
-                    <button id="sesion" class="nav-link header__hijo boton_sesion">Cerrar sesion</button>
                 </ul>
                 <li class="nav-item">
-                    <a class="nav-link header__hijo boton_sesion" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Mi lista</a>
-                    <table id="mi-lista" class="nav-link header__hijo">
+                    <button class="nav-link header__hijo boton_sesion" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Mi lista</button>
+                    <div class="dropdown" id="carrito">
+                    <table id="lista-carrito" class="nav-link header__hijo">
                         <tbody></tbody>
                     </table>
+                    <a href="#" class="nav-link header__hijo" id="vaciar-carrito">Vaciar Carrito</a>
+                    </div>
                 </li>
                 <form class="d-flex">
                 <input class="form-control me-2 barra__busquedaB1" type="search" placeholder="Search" aria-label="Search">
@@ -202,7 +204,7 @@
         </span>
         </div> -->
         <section>
-        <div class="main__div">
+        <div class="main__div" id="lista-productos">
             <h3 class="main__subtitulo">Popular en Netflix</h3>
             <span class="tarjeta">
                 <div class="tarjeta__div">
@@ -214,7 +216,7 @@
                     <p class="resumen">
                         Para los inadaptados adolescentes Hunter y Kevin, el camino hacia la gloria es claro: dedicarse al metal, ganar la Batalla de las Bandas y ser adorados como dioses.
                     </p>
-                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="1">Agregar a mi lista</a>
+                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="Metal Lords">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -226,7 +228,7 @@
                     <p class="resumen">
                         El aventurero James Keziah Delaney, dado por muerto en África, regresa a Inglaterra en 1814 para heredar el imperio comercial que su fallecido padre le ha legado. Pero hay muchas personas que desean convertir su retorno en una pesadilla.
                     </p>
-                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="2">Agregar a mi lista</a>
+                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="Taboo">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -238,7 +240,7 @@
                     <p class="resumen">
                         Sophie es la esposa de un poderoso político y vive una vida privilegiada y lujosa. Pero todo comienza a desmoronarse cuando sale a la luz un escándalo sobre su esposo y lo acusan de un crimen escandaloso.
                     </p>
-                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="3">Agregar a mi lista</a>
+                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="Anatomia de un escandalo">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -250,7 +252,7 @@
                     <p class="resumen">
                         El joven Uhtred pierde a su padre sajón en la batalla y su tío Aelfric le roba las tierras y la herencia. El muchacho también se convierte en guerrero, pero su familia sustituta es asesinada y Uhtred se encuentran solo.
                     </p>
-                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="4">Agregar a mi lista</a>
+                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="The last kingdom">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -262,7 +264,7 @@
                     <p class="resumen">
                         Se descubre el poder de los parques nacionales y espacios salvajes más grandes del planeta.
                     </p>
-                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="5">Agregar a mi lista</a>
+                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="Nuestros grandiosos parques nacionales">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -274,7 +276,7 @@
                     <p class="resumen">
                         Arturo es un galerista encantador y canalla. Renzo, un pintor huraño con una carrera en decadencia y, a pesar de sus diferencias, son grandes amigos. Arturo intenta relanzar la carrera de Renzo, pero su propuesta parece tan loca como arriesgada.
                     </p>
-                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="6">Agregar a mi lista</a>
+                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="Mi obra maestra">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -286,7 +288,7 @@
                     <p class="resumen">
                         Dos mujeres, Janis y Ana, coinciden en la habitación de un hospital donde van a dar a luz.
                     </p>
-                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="7">Agregar a mi lista</a>
+                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="Madres Paralelas">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -298,7 +300,7 @@
                     <p class="resumen">
                         En 1947, Sherlock Holmes se encuentra retirado y viviendo pacíficamente en Sussex con su ama de llaves y su hijo, un detective aficionado. Sin embargo, la paz es solo una fachada. Un viejo caso persigue al célebre detective desde hace 50 años.
                     </p>
-                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="8">Agregar a mi lista</a>
+                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="Mr. Holmes">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -310,7 +312,7 @@
                     <p class="resumen">
                         Los detectives Jake Peralta, Amy Santiago, Rosa Diaz y la sargento Terry Jeffords son unos policías talentosos, sin preocupaciones y con el mejor registro de arrestos, hasta que llega a la estación policial el nuevo jefe Raymond Holt.
                     </p>
-                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="9">Agregar a mi lista</a>
+                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="Brooklin precinto 99">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -322,7 +324,7 @@
                     <p class="resumen">
                         La humanidad ha encontrado la solución a la superpoblación: una tecnología noruega capaz de miniaturizar a un hombre de 1,80 metros hasta los 12 cm. De hecho, hace 4 años que existe un pueblo piloto habitado por voluntarios que han reducido su tamaño.
                     </p>
-                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="10">Agregar a mi lista</a>
+                    <a href="" class="resumen agregar-carrito nav-link header__hijo" data-id="Pequeña gran vida">Agregar a mi lista</a>
                     </div>
                 </div> 
             </span>

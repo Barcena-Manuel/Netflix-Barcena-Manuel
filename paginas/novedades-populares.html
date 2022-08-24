@@ -58,13 +58,15 @@
                     <li class="nav-item">
                         <a class="nav-link header__hijo" href="premium.html">Premium</a>
                     </li>
-                    <button id="sesion" class="nav-link header__hijo boton_sesion">Cerrar sesion</button>
                 </ul>
                 <li class="nav-item">
-                    <a class="nav-link header__hijo boton_sesion" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Mi lista</a>
-                    <table id="mi-lista" class="nav-link header__hijo">
+                    <button class="nav-link header__hijo boton_sesion" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Mi lista</button>
+                    <div class="dropdown" id="carrito">
+                    <table id="lista-carrito" class="nav-link header__hijo">
                         <tbody></tbody>
                     </table>
+                    <a href="#" class="nav-link header__hijo" id="vaciar-carrito">Vaciar Carrito</a>
+                    </div>
                 </li>
                 <form class="d-flex">
                 <input class="form-control me-2 barra__busquedaB1" type="search" placeholder="Search" aria-label="Search">
@@ -79,7 +81,7 @@
     <main class="main">
         <div class="separador__div"></div>
         <section class="section">
-            <div class="main__div">
+            <div class="main__div" id="lista-productos">
                 <h3 class="main__subtitulo">Lo nuevo en Netflix</h3>
                 <span class="tarjeta">
                 <div class="tarjeta__div">
@@ -91,7 +93,7 @@
                     <p class="resumen">
                         Pese a ser un exitoso conductor de radio, Sebastián no encuentra la felicidad por la difícil relación con su exesposa, el amor de su vida.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Lo nuevo en Netflix">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -103,7 +105,7 @@
                     <p class="resumen">
                         Nadia está atrapada en el tiempo: revive el día de su cumpleaños y muere al acabar la fiesta, aunque aparece de nuevo, sin secuelas, tras cada muerte. Nadia intenta averiguar por qué le está pasando algo así, pero nunca sabe cuánto podrá investigar.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Muñeca rusa">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -115,7 +117,7 @@
                     <p class="resumen">
                     La vida del peculiar abogado Saul Goodman mientras defiende a narcotraficantes en particular, y a toda suerte de criminales en general.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Better call saul">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -127,7 +129,7 @@
                     <p class="resumen">
                         Un famoso meteorólogo de la televisión se convierte en el enemigo público número uno cuando no logra evitar una terrible tormenta de granizo.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Granizo">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -139,7 +141,7 @@
                     <p class="resumen">
                         Muchos encuentran divertidos a los payasos. Sin embargo, hay una excepción a cada regla. Disfrazado de payaso, el asesino en serie John Wayne Gacy se aprovechaba de personas desprevenidas.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Cintas de john wayne gacy">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -151,7 +153,7 @@
                     <p class="resumen">
                         Luego de que un desastre azota la Tierra, un biólogo se embarca en una misión de investigación submarina debe luchar para sobrevivir con la tripulación mientras sale a la luz una conspiración.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Yakamoz s-245">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -163,7 +165,7 @@
                     <p class="resumen">
                         La esposa de Simón es asesinada para quitarle el corazón y trasplantarlo a la esposa de un poderoso millonario. En busca de venganza, Simón se lanza al peligroso mundo del tráfico de órganos.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Palpito">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -175,7 +177,7 @@
                     <p class="resumen">
                         Para los inadaptados adolescentes Hunter y Kevin, el camino hacia la gloria es claro: dedicarse al metal, ganar la Batalla de las Bandas y ser adorados como dioses.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Metal lords">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -187,13 +189,13 @@
                     <p class="resumen">
                         Se descubre el poder de los parques nacionales y espacios salvajes más grandes del planeta.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Nuestros grandiosos parques nacionales">Agregar a mi lista</a>
                     </div>
                 </div> 
                 </span>
             </div>
                 <div class="separador__div"></div>
-            <div class="main__div">
+            <div class="main__div" id="lista-productos">
                 <h3 class="main__subtitulo">Bien valen la espera</h3>
                 <span class="tarjeta">
                 <div class="tarjeta__div">
@@ -205,7 +207,7 @@
                     <p class="resumen">
                         A José Luis acaban de dejarlo plantado en el altar, y Mari Carmen, su madre, se ha empeñado en acompañarlo a la luna de miel para no perder el dinero.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Amor de madre">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -217,7 +219,7 @@
                     <p class="resumen">
                         Una investigación que relata el asesinato del reportero gráfico José Luis Cabezas, ocurrido en 1997 en un balneario de Pinamar, y su vínculo con el empresario Alfredo Yabrán, autor intelectual del crimen.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="El fotografo y el cartero">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -229,7 +231,7 @@
                     <p class="resumen">
                         Operación Mincemeat es una película británica de drama bélico de 2021, dirigida por John Madden. Está basada en el libro de Ben Macintyre acerca de la británica Operación Mincemeat durante la Segunda Guerra Mundial.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="El arma del engaño">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -241,7 +243,7 @@
                     <p class="resumen">
                     Cuando un niño desaparece, sus amigos, la familia y la policía se ven envueltos en una serie de eventos misteriosos al tratar de encontrarlo.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Stranger Things">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -253,7 +255,7 @@
                     <p class="resumen">
                         Mientras investiga un secuestro, un expolicía se infiltra en una prisión y se encuentra rodeado de peligrosos criminales que no deben conocer su verdadera identidad.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="El Marginal">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -265,7 +267,7 @@
                     <p class="resumen">
                         Verónica ha desaparecido y Cecilia, su hermana, inicia una lucha contra el reloj por encontrarla viva. Sin embargo, Cecilia deberá enfrentarse a la negligencia de las autoridades, los prejuicios de la sociedad y el hostigamiento mediático.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="42 dias en la oscuridad">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -277,7 +279,7 @@
                     <p class="resumen">
                         Después de diez años, dos policías incompatibles deben investigar un asesinato en un pequeño pueblo de Francia, donde se sucede una gran conspiración.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Incompatibles 2">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -289,7 +291,7 @@
                     <p class="resumen">
                         Cuatro viudas de criminales se alían para cometer un atraco a mano armada en Chicago con el que saldar sus deudas. Película basada en la serie de televisión británica de 1983 "Las viudas".
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Viudas">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -301,7 +303,7 @@
                     <p class="resumen">
                         Un grupo de jóvenes van a una fiesta en una isla paradisíaca, pero terminan viviendo un infierno lleno de secretos, peligros y trampas.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Bienvenidos a eden">Agregar a mi lista</a>
                     </div>
                 </div>
                 <div class="tarjeta__div">
@@ -313,7 +315,7 @@
                     <p class="resumen">
                         La historia de Clark Olofsson, el hombre detrás del síndrome de Estocolmo, que engañó a toda Suecia para que lo amara a pesar de sus crímenes.
                     </p>
-                    <a href="" class="resumen mi-lista nav-link header__hijo">Agregar a mi lista</a>
+                    <a href="" class="resumen mi-lista nav-link header__hijo" data-id="Clark">Agregar a mi lista</a>
                     </div> 
                 </div>
                 </span>

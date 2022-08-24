@@ -4,33 +4,41 @@ class Carrito{
         e.preventDefault();
         if(e.target.classList.contains("agregar-carrito")){
             const producto = e.target.parentElement.parentElement;
-            this.leerDatosPelicula(producto)
+            this.leerDatosProducto(producto)
         }
     }
 
     leerDatosProducto(producto){
         const infoProducto = {
-            imagen : producto.querySelector("img").src,
-            titulo : producto.querySelector("h4"),textContent,
-            id : producto.querySelector("a").getAttribute("data-id"),
-            cantidad:1
+            imagen: producto.querySelector('img').src,
+            titulo: producto.querySelector('h3').textContent,
+            id: producto.querySelector('a').getAttribute('data-id'),
+            cantidad: 1
         }
-        let prodcutosLS;
-        prodcutosLS = this.obtenerProductosLocalStorage();
-        prodcutosLS.forEach(function(prodcutosLS){
-            if(prodcutosLS.id === infoProducto.id){
-                prodcutosLS = prodcutosLS.id
+        let productosLS;
+        productosLS = this.obtenerProductosLocalStorage();
+        productosLS.forEach(function (productoLS){
+            if(productoLS.id === infoProducto.id){
+                productosLS = productoLS.id;
             }
         });
-        if(prodcutosLS === infoProducto.id){
-            Swal.fire('Ya esta en tu lista')
-        }else{
-            this.insetarCarrito(infoProducto);
+
+        if(productosLS === infoProducto.id){
+            Swal.fire({
+                type: 'info',
+                title: 'Oops...',
+                text: 'El producto ya está agregado',
+                timer: 1000
+            })
         }
-        this.insetarCarrito(infoProducto);
+        else {
+            this.insertarCarrito(infoProducto);
+        }
+        
     }
-    insetarCarrito(producto){
-        const row = document.createElement("tr");
+
+    insertarCarrito(producto){
+        const row = document.createElement('tr');
         row.innerHTML = `
             <td>
                 <img src="${producto.imagen}" width=100>
@@ -87,17 +95,17 @@ class Carrito{
         productoLs = this.obtenerProductosLocalStorage();
         productoLs.forEach(function(productoLs, index){
             if(productoLs.id === productoID){
-                productosLs.splice(index, 1);
+                productoLs.splice(index, 1);
             }
         });
 
-        localStorage.setItem("productos", JSON.stringify(prodcutosLS));
+        localStorage.setItem("productos", JSON.stringify(productoLs));
     }
 
     leerLocalStorage(){
-        let prodcutosLS;
-        prodcutosLS = this.obtenerProductosLocalStorage();
-        prodcutosLS.forEach(function(producto){
+        let productoLs;
+        productoLs = this.obtenerProductosLocalStorage();
+        productoLs.forEach(function(producto){
             const row = document.createElement("tr");
             row.innerHTML = `
                 <td>
@@ -111,7 +119,6 @@ class Carrito{
                 listaProductos.appendChild(row);
         });
     }
-
     vaciarLocalStorage(){
         localStorage.clear();
     }

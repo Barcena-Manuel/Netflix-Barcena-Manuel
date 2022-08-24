@@ -60,12 +60,6 @@
                     </li>
                     <button id="sesion" class="nav-link header__hijo boton_sesion">Cerrar sesion</button>
                 </ul>
-                <li class="nav-item">
-                    <a class="nav-link header__hijo boton_sesion" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Mi lista</a>
-                    <table id="mi-lista" class="nav-link header__hijo">
-                        <tbody></tbody>
-                    </table>
-                </li>
                 <form class="d-flex">
                 <input class="form-control me-2 barra__busquedaB1" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success barra__busquedaB2" type="submit">Search</button>
@@ -76,27 +70,27 @@
     </header>
     <!-- Final de la cabecera de la pagina -->
     <!-- Contenido principal de la pagina -->
-    <main class="main">
+    <main class="main-formulario">
         <section class="section">
-            <form id="formulario">
+            <form class="formulario" id="formulario">
                 <div class="cuestionario">
-                    <label for="name">Nombre y Apellido</label>
-                    <input type="text" id="name" name="name" placeholder="Ingrese su nombre y apellido">
+                    <label class="txt-cuestionario" for="name">Nombre</label>
+                    <input class="txt-datos" type="text" id="name" name="name" placeholder="Ingrese su nombre">
                 </div>
                 <div class="cuestionario"> 
-                    <label for="number">Edad</label>
-                    <input type="text" id="number" name="number" placeholder="Ingrese su edad">
+                    <label class="txt-cuestionario" for="number">Edad</label>
+                    <input class="txt-datos" type="text" id="number" name="number" placeholder="Ingrese su edad">
                 </div>
                 <div class="cuestionario">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electronico">
+                    <label class="txt-cuestionario" for="email">Email</label>
+                    <input class="txt-datos" type="email" id="email" name="email" placeholder="Ingrese su correo email">
                 </div>
                 <div class="cuestionario">
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" placeholder="Ingrese su contraseña">
+                    <label class="txt-cuestionario" for="password">Contraseña</label>
+                    <input class="txt-datos" type="password" id="password" name="password" placeholder="Ingrese su contraseña">
                 </div>
                 <div class="cuestionario">
-                    <input type="submit" value="Envair"/>
+                    <input class="txt-boton" type="submit" value="Envair"/>
                 </div>
             </form> 
         </section>

@@ -136,6 +136,30 @@ body {
   border-color: white !important;
 }
 
+.dropdown__menu.show {
+  display: relative;
+}
+
+.dropdown__menu {
+  position: absolute !important;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: white;
+  text-align: left;
+  list-style: none;
+  background-color: black;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
 .main {
   background-color: #141414;
 }
@@ -279,10 +303,40 @@ body {
   border-radius: 3px;
 }
 
-.cuestionario {
+.formulario{
+  background-image: url(../imagenes/n-wallpaper.jpg);
+  text-align: center;
+  background-position: center center !important;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1000px;
+}
+
+.cuestionario{
+  padding: 16px;
+}
+
+.txt-cuestionario{
+  text-align: center;
+  padding-right: 60px;
   color: white;
+  margin: 15px;
+}
+
+.txt-datos{
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.txt-boton{
   background-color: #141414;
-  margin-left: 600px;
+  color: white;
+  width: 100px;
 }
 
 /*.footer__title {

@@ -2,13 +2,13 @@
 const carro = new Carrito();
 const carrito = document.getElementById("carrito");
 const productos = document.getElementById("lista-productos");
-const listaProductos = document.querySelector("#lista-productos tbody");
-const vaciarCarrito = document.getElementById("vaciar-carrito")
+const listaProductos = document.querySelector("#lista-carrito tbody");
+const vaciarCarritoBtn = document.getElementById("vaciar-carrito")
 
 cargarEventos();
 
 function cargarEventos(){
-    productos.addEventListener("click", (e) => {carro.comprarProducto(e)});
+    productos.addEventListener("click", (e) =>{carro.comprarProducto(e)});
 
     carrito.addEventListener("click", (e)=>{carro.eliminarProducto(e)});
 
@@ -16,4 +16,3 @@ function cargarEventos(){
 
     document.addEventListener("DOMContentLoaded", carro.leerLocalStorage());
 };
-
